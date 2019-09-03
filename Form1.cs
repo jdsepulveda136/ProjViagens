@@ -21,14 +21,11 @@ namespace ProjViagens
 
             string query = "select * from veiculo";
 
-            // MessageBox.Show(query);
-
             cmb_veiculo.DataSource = dados.BuscaDados(query);
             cmb_veiculo.DisplayMember = "matricula";
             cmb_veiculo.ValueMember = "id";
 
             dataGridView1.DataSource = dados.BuscaDados(query);
-
 
         }
 
